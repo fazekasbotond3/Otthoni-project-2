@@ -10,3 +10,7 @@ body{
     background-image: url(https://www.wallpaperboulevard.com/Images/product/white-grey-coastal-birds-flying-south-w-yxkc.jpg);
 }
 
+.card-img-top{
+    border-radius: 8px;
+}
+
