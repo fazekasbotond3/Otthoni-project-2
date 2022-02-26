@@ -14,3 +14,19 @@ body{
     border-radius: 8px;
 }
 
+h3{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 36px;
+}
+
+#telepulesek a{
+    color: black;
+}
+
+#madaraknavbar{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
