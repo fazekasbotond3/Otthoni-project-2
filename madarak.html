@@ -13,19 +13,20 @@
 
 <!-- navbar -->
 
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark navigacios w-75 mx-auto" id="madaraknavbar">
+      <nav class="navbar navbar-expand-md navbar-dark  navigacios w-75 mx-auto bg-dark" id="madaraknavbar">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Menü</a>
+          <a class="navbar-brand fw-bold fs-3" href="#">Menü</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <ul class="navbar-nav me-auto mb-4
+ mb-lg-0 ">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Főoldal</a>
               </li>
               <li class="nav-item dropdown align-items-end">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Szigetköz
                 </a>
                 <ul class="dropdown-menu border border-1 border-dark" aria-labelledby="navbarDropdown">
@@ -46,6 +47,12 @@
                   <li><a class="dropdown-item" target="_blank" href="#">Something else here</a></li>
                 </ul>
               </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Madarak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galéria</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -57,60 +64,114 @@
 
         <div class="row">
 
-        <div class="card col-lg-4 bg-dark mx-auto mb-2">
-            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBESEREREREPDxEPDw8REQ8REREPDxEPGBQZGRgUGBgcIS4lHB4rHxgYJkYnKy80NTU1GiQ7QjszTS40NzEBDAwMEA8QGhISHDQhIyE0NDE0NDQ0NDQxMTQ1NDYxNDQxMTQ0MTQxNjE0NDE2MTQ0PzQ0MTExMTQ0NDQxNTQ0Mf/AABEIALgBEgMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAAAgEDBAUGB//EAD8QAAIBAwIDBwEGAgcJAQAAAAECAAMREgQhBTFBBhMiMlFhcYEHQlKRocEU8FNicrHR4fEWIyQzQ0SCkqIV/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAIxEBAQACAgIBBAMAAAAAAAAAAAECEQMhEjFRBCJBYQUT8P/aAAwDAQACEQMRAD8A3xWKRLCIpEAS0JJEiCkgxxEEdYEcGODEEYQJYIwMQRhAHBjXlYjAwBrwvIkRKmJ8oZysmKTFcmkxXZye8mOTIykXJXivLxTUlN5BMi5HpcakVnlRMUmZ2nIcvKnaQWlbNCGV2mM5lrtMdzNMU2qnMrYxnMrYzaMqgmJeQxhKRU3k3iXheMj3hFEmAF4QhAOiMgwMgxHEGLAmRAzCOsrjKYA4jgyuTeBLQY4Mxw0kNAaXhpOUpykgxbORblGvKgYwMVXDyDCBmdXCkRDGYyJJlkEyTEYyaEExSYExCYjBMrcxmlTmOFaRjKWMscylzNMYVVsZUxjsZUxmkZUhMgmSTFlITeSDFkiMGWOBFUSwCALaEsxkQDfNEJgzRLxK0CYt4QiCRLFlYlqw2BJMIGLYRDKBEUxiGDRgZVeMpgpcpliypY4Mi1ciy8NUpp0H1LhlpU1yLWuW/sjr88pbpqY87boh5fib8M4j7SeOs6LQDOPFcqrFEx6DH735yJnjcvH8jKWY7YSdqtXqtQlDTd3R7x8VYpmUT8TE3H5Cejt2dIoXOsqpVCX70rSKBxvcoVtj7C3taeV/Zxw6pV1ZqKyBKIGQYXvfcW/KdP8AaTqdUO6Q1BR0jKzPU8RVqg+62Pi5bgWsfEek1ykk6iMPuynldT5YfBu1Ds5o6pEVg+C16ZARtyL2PTa9x68vXp2njLa/A2bcEAqwBsw6EA7267z1DstrG1OkSpixFM92zEGxt5Wv7j9QZz6y33Hoc2HBMJlxZb+ZfbZmLGMUxOUjSpjLXlLSoStjKmlrCVkS4lS0paXsJSwmkZ1UZEciGMpKAIyiAWWosCCrLUSSiTIRIAmMJfhCAZBkRjFMTQSBJjAQTUAS0CKBGAgNJixrSLRbGkGKRHtC0WzioiOixwscLFaqFUS1EJNhzkqn095FWuEsoB39N2Y/AmOecjTDG1NfVKnhvsOXS56mcj2s4SNSgdMWqKLL93w/T6zd6sAm7tjbmOZ+JrNTWQXIYqOY3Juff1nJjcpl5S9um443Hxqfsv0apTrU2AGoSrk65XbCwANvSdd2l4V/FaWrQAGRXKmSSpWou6kMNx6fBM5bgmlem38XTYBnNiWBHeC/Wdrp+JrUADDBztYna/sZ2482OXVuq5bx3Cyybk/3bwnRcL/4qiji96+FfvHZFCqRlkykcsfkn6T17hmv0+kTu6GDIXJbuqSqDcWN0Qbn33M57td2Mq1natRXvFqMC9MlVKtYC/uu3z+2209BKaKiKERAFVQLAAReV9X3HVz48XWfHrVnc+KrrcQDsGShXQMBkpQpieoAJ/n9JYZLRSYrducrysxzFMZK2ErIl7SlhKxKqHErZZkMJWVmsTYoxgFl2MAkNloirLUSMiS9Eh5DQRJeiQRJeiw2fijCEthDZ6UtFjkRSI0IjCLGUQI6xxEEYQM0i0LyZNJFpIEJIkmZVlgQAXPtYDmf59ZRU1KIyqWGbglUHibEdbSvU1BfxbkX2vsBMOTPxbYY7NWr9Ntvg2Ew6usCXxtlbdubfF5h6vWeIoi/CjclpotZqyCyswVU87E8m6j5/wAJy+XldR1TGYzdZWo1u56np1ms01fv6wpIRfmzcwo67dT7TS6/ipbwUroD5qhPjPsPwj9fibvsNoyXzYqFvYMzdetkHPcc2sJ28PBrvJycvNvrF6R/DhdMqAmyKLMSo/u2/KaTT6m7imxG1iCTzm/1QXu8d+VzfdvrOH1motVy5BDcfO+/vOL6jGf2XTo4L9nb0DQLU8N2JUrbf0ImmdbXHpNvwrXrUoo/Lw7j8JtuJq39Z2YzWM725rd5VQ0Ro7mVEx6PYMUwJiMZUgBMQwJhLkSW0i0aEZ6JaSok2jKIUaMqy9VioJegmdPSVWOIARgItmISYQ8holohlhErabRiWSJEkR6K1YsaKojQ0WxIvIJgDFRswmHxXilPTUy7sMyp7ul96o305L6n/SLxPitHTIzVXAfDJKK3NSoegG1lH9ZtvnlPLNdrnqOz1HLu3mP7fHtyhMfkXJ1fYziAqcQcV3u+pQqtZjazXvgF99tr7Yz0uvwdLBUPQXc2ufieMdkuF1dXqkFOwSi6PVqHdUUHkAPMx5W/Pae5/wDwP1tPC/mPqZhljhx+77/Xw14sssWh1x0egptUqOqO11V28blrckXqf5M8Y4vq+9r1HDjBmYogLMFW9gCSBdrbk+82HazjNTXaksiVTSyNPTU8WJKjYkepYi59NgeUy+A9jHqEVNUxoJz7tSM2+W5L9N/idv0XBODDy5Lu33+v0eeWed053TUndgqI9VibBEUkE+hI/wAZ6l2N4JW09PKuoDsSVGxKKfuL6e9tvnnM3hlLSaNQtJEVjy+8+I6knf6zMp6p6j3JsnpynVl9Rj6iZw33WbqRjTJ2udgOY/znEdoKIplLG5bczstXWUiw35AD1mi1XCe8cM5+ROLkxyzy3I6ePKY46tP2UNQUHL+V2GA/q75H85s3llOmERUGwUWER51YzWMjHK7trFqSljL6gmO00SUtK2MGMUmXIBeF5Ei8Zw4MmLJEFaMBHURFlqiTaeliCXJKVmQsm0tGWOBFAjiTacFoSYSNmQiVOJe0qadUrGxWYKZEAJTOxYDJvMfU6mnSQvVqJSQfedgo+nr9JodZ2xpp/wAqial/K9Zzp6be6oBm4+AIJdTQ071GxRGY+w5fJ6Ru0OlfSaR6wZDWNkppiard43lREHnY789hbk3KcUn2l60ApSo0DiPJTptTQH8TXJY/XGYnHu1FZ10zvXHerpn7whMRTqVQQUpJe6sqHHNjzJt7sOf4kXYB6lYPVq4u1MFnqWYE3d+V7BfCLkZb2tOr7F9iKdemNTrFqYsb06BPdo6dHYg5MD6eEW9bzkOHU2quuFGodPe1RlITNeqlzbn1C2+J6Dqu0tZ1FOgooooChiAz2AtsOQ+t/pPO/kM+a4zDhurfd+J+mnHhvuut1Gu0mhpAE0dPSUEKqgKPhUUXY/AJnLa3tlVrkppUNFCbfxFRQ1S3qqeUfLX/ALIml/8AzhUYvUZqjnmzsXf8zMtNEQLJYAfQTzeL6HDj7v3ZfNdWOOK/RYIzO2VSq/nqu3eVWHPdjyHPYbC+wENTxAswAvYch6+n7yzQ8NxuxN7/AKRRpLMTb1nbrJcuMPoFuxLbmbnTUyd28K9B+8wdIi0wSdyY1XXXFhsJphhJ3WeeVvUZ1Wsi7LufWW6S7XJ5A/mZgaDSPUIdrqg3Hq3x/jNyqACw2Amtyk9MpjfZHlTy5xKmEJVaYziYziZjiY7rKlKsVhEIl7JFKTWVKgiSBLMIYQ2uEAjgSQkYJFtSFEtUQVY6rJ2DIJcgiKJaoitIwEcCQI4Ei04i0JOMmTs1TSpll5SRjOiZMrGO6hUZ28KLbJze1+ij1Y9ANzOU4l2nqEsmnpPTxJVnqJZwf/IYr9A59hNr2g1OqQNR0tOtXq1lBCpTKUES9sqlUkXJ38IYDbceur4H2O1QYvq9SCzKAUQd66AHkrt4V+ApHKX5SRnZbWifS1qjipVqWZjYMzM9TI7WVj4v/TD4mX/s2iU3raljp6OxerWZqTtfkBTXxu3sxBnoOh4XRo700Ae1jUa71CPTM729htJr8Kp1aiVKw74UyDSpPY0Uf8eH3n92vboBvePK33T8ZHBcO4XW1NN6ej06aXS1AijV1lKtirXLU13LFttwSBjbM3M6DhfYbRUfFUU6yqfM9ezLfqQnlH1ufedbjDGK5nMY1o4XR/o0PSxBYAewOwkHhOnP/SQX9Bj/AHTZ4ScJndK7aKtwBNyjOh6KTkv67/rMCrpalPzbj23E63CBQHmAfkXkWRcrh9RxQ01JKkqvRRc/WYycYDi6g36gixB9LTu6uiR/OoI/CPCPrbn8cvac32h7O0kQ1aaBUtjUpq+FiTs6fuvW3LnA52w9JQ1NYjFGCn77XVAPW/X6ToNHwZEsXPeN7iyA+w6/WJwXi9Nkp0qlqdRURUO/d1ExADq37X29ZvMYWWBj4wIl+MUpI2NsdhK2WZJSKUj2TEdJS1OZxSKacqZJ0wDSi91M804d3KmY01/cw7qZ/dyDTj8jYHdSRTmb3UnuormGIKcYJMnupISLyNQqSxVlgSOEk3IKwsYLHxjASLkeyWhHtCGxsYwxl2MMZr5JVBZISWBYwEPIECRwkYCNaGyLaTjJjQ2CWhaPCGwS0nGNaFothRqawpoXIJ3VQo8zOzBVUe5JAnH8W1Gpyc1mRFXJAFANQMQbhBuBtjued/gzquMq4oVGTDOmoq08wSmaEMARcbbW+s5CnQyUVKy97WqZOTVvTCgNcWTYNci/+Uy5eacc2uXXemmpO+mpUqKVFzUtWelUyqUqdDzkXAuhO5vfqfWdbwrXNTpJXs76fUEG2OVSm5uTcLfkBv72E5TjaYM3dUVNVmCVV7kkMbEXQ9V3IufXfmBNjwvjNThuFKpSBp1kaphTIR6bXtcI5tY8rXFypPMm+mHJ54717KW2vQFsQCCCCAQRuCDyIgVnAv8AaFRppTpUNPVYU6aIHqFVsFUL5Vv6WvfnN12c7X0tWyUmR6dZy+KhC1NlC5A5Am2wPO3L4iuN+DsunRFZBWW2kYyNpUlIpSXkRSI9hThDCX4wxhsMc05HdzJxhjHsMbu4FJkWkFYrQx8YYy/GGMWz2pwk4S7GGMNkpwk4y60jGTsKrQluMIBNoWhC8vYFoQvIvDZmEYRLwvDYWRYt4Xj8i0shEDSQYbB5Ii3kiGwisAUa4uMWuBzO3T3nn/eXVNlyS9lJOatsCb5DIXI8Nr+gvuO64jVCUKzlxTxpOcyuYQ4mxxuMt7bdZ53W1AOlV3oszijSqsjm7Lbdq1hawJLH8RuZjy4W6ulRbU1X/brp0Ku5SixdLKbWbxeKz3LWufTmTYc1xbU16lTLunVaS4AOVZkYE5EldjueXtfrNgvFhSSqtRDV1DIDTdmZlKCwsv8ARmzXvbe1r7zVazUhgKlJnUBEyR3UsamynZT5dhzsec04cLjb0WPvbUVHC3Ntm6g7gHf+fmej/Zhwm4qa51tmWpUL/huM2H1CqP7Les83ore97EkhEW4F3O19/p/lPa+xzs2nJKqlFWWnpqakvhRRVW5Y2yZmDEmw3vz2M6c+sdHlk31oWkyJzVMQRFtGkRGAJNoQjIWhaTJEYLjIxlkUxAmMMY8JJkxhaPIgC2haNCAJaEeEAxy0XKITC8o9HDRryq8kGA0svJiCOBAVBixyItoEkR1MQCOBAJBjgxBOf7Q9oFpIyUnXMizVLgincHcDqf0lY43K6gU9sNXTfuqOTVGSqrPpl2RzbwB29AfujnvcbTU1eHNXLVKjIBjkCgVnqXUkruLbeXoo3+Tq9EWqVrLkWts4cNmjgZuzWIy83L8ud+joIFCoVYHBVRFa4djZmJYm7Abbm6j32E6ZjJNFenLajhwCPUUNcrZEcANzsL2/0sCeXLS8O4cru61lqYorEY+C9QnwsxIJC+ba29uk7PVotNy1RlZmNhSpgEnYAKp53sLE9Nrcpz1bVM38XWakrAOFByANqd1Kqot4RZhck9bD1jd70JWN2f4fRaozsy1MWZEWo3doqjzMGFyxubDbqxI2nsPCtKKNClSFhggBAFhkd2sPS5M4PsF2aP8AudTVVgiIHpq++ddmJL89lXla253+fRbzPPflbtMx72a8iLeF5FWkmReKTIJiB7wBiXgDALbyRKwYwMYPIJkXhAJhIvCIJMiReF4gmEi8LxBMJF4QDCMiEJSjAQEIRg4lqiEIASCIQgQkwhCE1PFdU5BRFYKUbxnwhm5AeuO9+l8bcjOVWjTLv3YqEUVYajV1QFpIBfIJnexOXP2FgSSYQm2CvwxEd6xC0Q9LS0sm/iMyjtZN8SACxP79ABLKfElU12NJrBaKUmfM1NgTYO25BuNvc84QmlL8tHrOMEU2Y4tVJGN8Vvc2UfAJ5egPyNxwPgNWqunod2DS7wV9XqHUinUOWTIp2zJIx26DpCEm9Ylfb03bpsByA2AEi8ITnoQTC8IRAXiwhAxJBhCATeTlIhAjBoXhCMC8m8mEAW8gmEIqEXk3hCIxeEIQJ//Z" class="card-img-top mt-3" alt="...">
+        <div class="card col-lg-5 col-md-12  mx-auto mb-4">
+            <img src="https://aranydio.com/images/easyblog_articles/1684/b2ap3_large_tengelic.jpg" class="card-img-top mt-3" alt="...">
             <div class="card-body">
               <h5 class="card-title text-light">Tengelic</h5>
               <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a target="_blank" href="https://hu.wikipedia.org/wiki/Tengelic_(mad%C3%A1r)" class="btn btn-primary">Wikipédia</a>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/Tengelic_(mad%C3%A1r)" class="btn btn-dark border border-light border-1">Wikipédia</a>
             </div>
           </div>
 
-          <div class="card col-lg-4 bg-dark mb-2">
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
             <img src="cinke4(szerkesztett).jpg" class="card-img-top mt-3" alt="...">
             <div class="card-body">
               <h5 class="card-title text-light">Széncinege</h5>
               <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a target="_blank" href="https://hu.wikipedia.org/wiki/Sz%C3%A9ncinege" class="btn btn-primary">Wikipédia</a>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/Sz%C3%A9ncinege" class="btn btn-dark border border-light border-1">Wikipédia</a>
             </div>
           </div>
 
-          <div class="card col-lg-4 bg-dark mb-2">
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
             <img src="csuszka(szerkesztett).jpg" class="card-img-top mt-3" alt="...">
             <div class="card-body">
               <h5 class="card-title text-light">Csuszka</h5>
               <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a target="_blank" href="https://hu.wikipedia.org/wiki/Csuszka_(mad%C3%A1r)" class="btn btn-primary">Wikipédia</a>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/Csuszka_(mad%C3%A1r)" class="btn btn-dark border border-light border-1">Wikipédia</a>
             </div>
           </div>
 
-          <div class="card col-lg-4 bg-dark mb-2">
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
             <img src="cinke(szerkesztett).jpg" class="card-img-top mt-3" alt="...">
             <div class="card-body">
               <h5 class="card-title text-light">Kékcinege</h5>
               <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a target="_blank" href="https://hu.wikipedia.org/wiki/K%C3%A9k_cinege" class="btn btn-primary">Wikipédia</a>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/K%C3%A9k_cinege" class="btn btn-dark border border-light border-1">Wikipédia</a>
             </div>
           </div>
 
-          <div class="card col-lg-4 bg-dark mb-2">
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
             <img src="baratcinege(szerk.).jpg" class="card-img-top mt-3" alt="...">
             <div class="card-body">
               <h5 class="card-title text-light">Barátcinege</h5>
               <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a target="_blank" href="https://hu.wikipedia.org/wiki/Bar%C3%A1tcinege" class="btn btn-primary">Wikipédia</a>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/Bar%C3%A1tcinege" class="btn btn-dark border border-light border-1">Wikipédia</a>
             </div>
           </div>
 
-          <div class="card col-lg-4 bg-dark mb-2">
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
+            <img src="http://ocdn.eu/images/pulscms/MTY7MDA_/c011addae0e60efd6c61bce19fa84a69.jpeg" class="card-img-top mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light">Vörösbegy</h5>
+              <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/V%C3%B6r%C3%B6sbegy" class="btn btn-dark border border-light border-1">Wikipédia</a>
+            </div>
+          </div>
+
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
+            <img src="https://csivitelo.cafeblog.hu/files/2018/01/European-greenfinch-Carduelis-chloris.jpg" class="card-img-top mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light">Zöldike</h5>
+              <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/Z%C3%B6ldike" class="btn btn-dark border border-light border-1">Wikipédia</a>
+            </div>
+          </div>
+
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
             <img src="https://www.bfnp.hu/media/thumbs/sz/ur/ke/szurke-gem-ardea-cinerea-ef2a8a37-1015902.jpg" class="card-img-top mt-3" alt="...">
             <div class="card-body">
               <h5 class="card-title text-light">Szürkegém</h5>
               <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a target="_blank" href="https://hu.wikipedia.org/wiki/Sz%C3%BCrke_g%C3%A9m" class="btn btn-primary">Wikipédia</a>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/Sz%C3%BCrke_g%C3%A9m" class="btn btn-dark border border-light border-1">Wikipédia</a>
             </div>
           </div>
           
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
+            <img src="http://ocdn.eu/images/pulscms/Y2Q7MDA_/2dd9d94b32fe6f63c9e21fe35b735a44.jpeg" class="card-img-top mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light">Bütykös hattyú</h5>
+              <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/B%C3%BCtyk%C3%B6s_hatty%C3%BA" class="btn btn-dark border border-light border-1">Wikipédia</a>
+            </div>
+          </div>
+
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
+            <img src="https://d6scj24zvfbbo.cloudfront.net/b74c702a7a50c340dbab3c1f1557eabb/200000098-e0d67e1d0b/Kis%20k%C3%B3csag.jpg?ph=9bdc368acb" class="card-img-top mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light">Kis kócsag</h5>
+              <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/Kis_k%C3%B3csag" class="btn btn-dark border border-light border-1">Wikipédia</a>
+            </div>
+          </div>
+
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
+            <img src="https://nepszava.hu/i/10/8/0/1224026.jpg" class="card-img-top mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light">Fehér gólya</h5>
+              <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/Feh%C3%A9r_g%C3%B3lya" class="btn btn-dark border border-light border-1">Wikipédia</a>
+            </div>
+          </div>
+
+          <div class="card col-lg-5 col-md-12  mb-4 mx-auto">
+            <img src="https://www.turistamagazin.hu/media/thumbs/ko/ze/ls/kozel-szaz-eve-kocsagor-vigyazott-a-nagy-kocsagokra-ad127e0b-1280133.jpg" class="card-img-top mt-3" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-light">Nagy kócsag</h5>
+              <p class="card-text text-light">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a target="_blank" href="https://hu.wikipedia.org/wiki/Nagy_k%C3%B3csag" class="btn btn-dark border border-light border-1">Wikipédia</a>
+            </div>
+          </div>
+
           </div>
 
         </div>
